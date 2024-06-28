@@ -5,30 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KnowJoy prototype</title>
-    <script src="index.html"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="kj.css">
 </head>
 <body>
     <!-- <h1 class="title">Title</h1>
     <h2 class="Subtitle">Subtitle</h2> -->
     <div>
         <form action="success.html" method="get">
-            <label for="title">Title:</label>
-            <input name="title" id="title" type="text">
+            <label for="title">KnowJoy</label>
+            <br>
+            <label for="subtitle">Tunnel Escape?</label> 
+            <br><br>
+            <label for="textbox1">Term:</label>
+            <input name="term" id="term" type="text">
 
-            <label for="subtitle">Subtitle:</label>
-            <input name="subtitle" id="subtitle" type="text">
+            <label for="textbox2">Definition:</label>
+            <input name="definition" id="definition" type="text">
 
-            <ul id="term-def pair">
-                <li>
-                    <label for="term">Term:</label>
-                    <input name="term" type="text" placeholder="term">
-
-                    <label for="definition">Definition:</label>
-                    <input name="definition" type="text" placeholder="definition">
-                </li>
-            </ul>
             <button onclick="addPair()">Add</button><!--link to js function that will be called when addPair button is clicked-->
+
+            <div 
+            style="height:120px;width:480px;border:1px solid #000000;Margin-top: 10px;font:18px Times, Garamond, Serif;overflow:auto;">
+            <ol>
+                List of Terms
+            </ol>
+            </div>
+
         </form>
     </div>
 </body>

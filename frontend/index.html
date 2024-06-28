@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KnowJoy prototype</title>
-    <link rel="stylesheet" href="kj.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <h1 class="title">Title</h1>
-    <h2 class="Subtitle">Subtitle</h2> -->
     <div>
         <form action="success.html" method="get">
             <label for="title">KnowJoy</label>
@@ -22,16 +20,17 @@
             <label for="textbox2">Definition:</label>
             <input name="definition" id="definition" type="text">
 
-            <button onclick="addPair()">Add</button><!--link to js function that will be called when addPair button is clicked-->
+            <button id="addDefinition">Add</button><!--link to js function that will be called when addPair button is clicked-->
+
+            <h4>List of Terms</h4>
 
             <div 
-            style="height:120px;width:480px;border:1px solid #000000;Margin-top: 10px;font:18px Times, Garamond, Serif;overflow:auto;">
-            <ol>
-                List of Terms
-            </ol>
+            style="height:120px;width:480px;border:1px solid #000000;margin-top: 10px;font:18px Times, Garamond, Serif;overflow:auto;">
+            <ul id="elementList"></ul>
             </div>
-
         </form>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

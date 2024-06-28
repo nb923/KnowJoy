@@ -1,0 +1,9 @@
+title, .subtitle{
+    height: 120px;
+    width: 480px;
+    border: 1px solid white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: times, garamond, serif;
+    overflow: auto;
+}

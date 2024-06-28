@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KnowJoy prototype</title>
     <script src="index.html"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- <h1 class="title">Title</h1>
@@ -20,22 +21,14 @@
 
             <ul id="term-def pair">
                 <li>
-                    <input type="text" placeholder="term">
-                    <input type="text" placeholder="definition">
+                    <label for="term">Term:</label>
+                    <input name="term" type="text" placeholder="term">
+
+                    <label for="definition">Definition:</label>
+                    <input name="definition" type="text" placeholder="definition">
                 </li>
             </ul>
             <button onclick="addPair()">Add</button><!--link to js function that will be called when addPair button is clicked-->
-
-            <!-- do i need everything under here if i'm using the js function? -->
-<!--             <label for="textbox1">Term:</label>
-            <input name="term" id="term" type="text">
-
-            <label for="textbox2">Definition:</label>
-            <input name="definition" id="definition" type="text">
-
-            <label for="add">Add</label>
-            <input name="add" id="add" type="button"> -->
-
         </form>
     </div>
 </body>

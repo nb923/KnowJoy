@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <form action="success.html" method="get">
-            <label for="title">KnowJoy</label>
-            <br>
-            <label for="subtitle">Tunnel Escape?</label> 
-            <br><br>
-            <label for="textbox1">Term:</label>
-            <input name="term" id="term" type="text">
-
-            <label for="textbox2">Definition:</label>
-            <input name="definition" id="definition" type="text">
-
-            <button id="addDefinition">Add</button><!--link to js function that will be called when addPair button is clicked-->
-
-            <h4>List of Terms</h4>
-
-            <div 
-            style="height:120px;width:480px;border:1px solid #000000;margin-top: 10px;font:18px Times, Garamond, Serif;overflow:auto;">
-            <ul id="elementList"></ul>
+    <div id="container">
+        <div id="termbox">
+            <form action="success.html" method="get">
+                <label for="title">KnowJoy</label>
+                <br>
+                <label for="subtitle">Tunnel Escape?</label> 
+                <br><br>
+                <label for="textbox1">Term:</label>
+                <input name="term" id="term" type="text">
+    
+                <label for="textbox2">Definition:</label>
+                <input name="definition" id="definition" type="text">
+    
+                <button id="addDefinition">Add</button><!--link to js function that will be called when addPair button is clicked-->
+    
+                <h4>List of Terms</h4>
+    
+                <div id="termList">
+                    <ul id="elementList"></ul>
+                </div>
+            </form>
+        </div>
+        <div id="gamebox">
+            <div id="termingame">
+                <h3 class="centerElement">Definition</h3>
             </div>
-        </form>
+            <div id="definitioningame">
+                <button class="centerElement">Term1</button>
+                <img src="assets/separator.png" alt="separator" class="centerElement">
+                <button class="centerElement">Term1</button>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>

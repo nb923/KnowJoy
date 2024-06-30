@@ -15,12 +15,21 @@
                 <br>
                 <label for="subtitle">Tunnel Escape?</label> 
                 <br><br>
+
+                <div id="term"> 
                 <label for="textbox1">Term:</label>
                 <input name="term" id="term" type="text">
-    
+                </div>
+
+                <br>
+
+                <div id="definition"> 
                 <label for="textbox2">Definition:</label>
                 <input name="definition" id="definition" type="text">
-    
+                </div>
+
+                <br>
+
                 <button id="addDefinition">Add</button><!--link to js function that will be called when addPair button is clicked-->
     
                 <h4>List of Terms</h4>
@@ -28,20 +37,23 @@
                 <div id="termList">
                     <ul id="elementList"></ul>
                 </div>
+                <br>
                 <button id="startGameButton">Start Game</button>
                 <h4 id="logger"></h4>
             </form>
         </div>
+
         <div id="gamebox">
             <div id="termingame">
                 <h3 class="centerElement" id="elementDefinition">Definition</h3>
             </div>
             <div id="definitioningame">
                 <button class="centerElement" id="buttonOne">Term1</button>
-                <img src="assets/separator.png" alt="separator" class="centerElement">
+                <img src="assets/separator.png" alt="separator" class="centerElement" height = "500"%”>
                 <button class="centerElement" id="buttonTwo">Term2</button>
             </div>
         </div>
+
     </div>
 
     <script src="app.js"></script>

@@ -190,6 +190,7 @@ function startTimer(){
     }, 1000);
 }
 
+
 document.getElementById('startGameButton').addEventListener('click',startTimer);
 document.getElementById('addDefinition').addEventListener('click', addPair);
 document.getElementById('startGameButton').addEventListener('click', startGame);

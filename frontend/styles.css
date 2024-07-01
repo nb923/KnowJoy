@@ -1,72 +1,84 @@
-title, .subtitle{
-    border: 1px solid white;
-    margin: 10px;
-    font-size: 36px;
-    font-family: times, garamond, serif;
-    overflow: auto;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Times, Garamond, Serif;
 }
 
 #container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    height: 100%
+    height: 100%;
 }
 
 #termbox {
     flex: 0 0 20%;
-    justify-content: flex-start;
-    display: flex;
-}
-
-#term, #definition{
-    width:300px;
-    margin-bottom: 10px;
-    display:flex;
-    flex-direction: column;
-    text-align: auto;
-}
-
-html, body {
-    height: 100%;
-}
-
-#termList {
-    flex: 1;
-    height: 400px;
-    border: 1px solid #000000;
-    font: 18px Times, Garamond, Serif;
-    overflow: auto;
-    
+    padding: 20px;
+    border-right: 1px solid #000;
 }
 
 #gamebox {
-    flex: 0 0 73%;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 1% 1% 0% 2%;
-    border: 1px solid #000000;
-    padding: 2%; 
-    display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-#termingame {
-    flex: 1;
-    height: 100%;
-    justify-content: space-evenly;
-    flex-direction: column;
-    display: flex;
+#title, #subtitle {
+    font-family: times, garamond, serif;
+    text-align: left;
 }
 
-#definitioningame {
-    flex: 1;
-    height: 100%;
-    justify-content: space-evenly;
-    flex-direction: column;
+#title {
+    font-size: 36px;
+}
+
+#subtitle {
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#term, #definition {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#termList {
+    height: 300px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+#startGameButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
 }
 
 .centerElement {
-    justify-content: center;
+    text-align: center;
 }
 
+button {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+h4 {
+    margin-top: 20px;
+}

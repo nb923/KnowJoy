@@ -1,46 +1,55 @@
-<!-- boiler plate function?? -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KnowJoy prototype</title>
+    <title>KnowJoy Prototype</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">
         <div id="termbox">
             <form action="success.html" method="get">
-                <label for="title">KnowJoy</label>
+                <label for="title" id="title">KnowJoy</label>
                 <br>
-                <label for="subtitle">Tunnel Escape?</label> 
+                <label for="subtitle" id="subtitle">Tunnel Escape?</label> 
                 <br><br>
-                <label for="textbox1">Term:</label>
-                <input name="term" id="term" type="text">
-    
-                <label for="textbox2">Definition:</label>
-                <input name="definition" id="definition" type="text">
-    
-                <button id="addDefinition">Add</button><!--link to js function that will be called when addPair button is clicked-->
-    
+
+                <div class="form-group"> 
+                    <label for="term">Term:</label>
+                    <input name="term" id="term" type="text">
+                </div>
+
+                <div class="form-group"> 
+                    <label for="definition">Definition:</label>
+                    <input name="definition" id="definition" type="text">
+                </div>
+
+                <button type="button" id="addDefinition">Add</button><!-- Link to JS function that will be called when the addDefinition button is clicked -->
+                <div id= "timer" class="hidden">Timer</div>
                 <h4>List of Terms</h4>
     
                 <div id="termList">
                     <ul id="elementList"></ul>
                 </div>
-                <button id="startGameButton">Start Game</button>
+                
+                <button type="button" id="startGameButton">Start Game</button>
                 <h4 id="logger"></h4>
             </form>
         </div>
+
         <div id="gamebox">
             <div id="termingame">
                 <h3 class="centerElement" id="elementDefinition">Definition</h3>
             </div>
+            
+            <img src="assets/separator.png" alt="separator" class="centerElement" height="500">
+
             <div id="definitioningame">
                 <button class="centerElement" id="buttonOne">Term1</button>
-                <img src="assets/separator.png" alt="separator" class="centerElement">
                 <button class="centerElement" id="buttonTwo">Term2</button>
             </div>
+            
         </div>
     </div>
 

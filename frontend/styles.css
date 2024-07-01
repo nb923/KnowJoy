@@ -106,3 +106,7 @@ button {
 h4 {
     margin-top: 20px;
 }
+
+#timer{
+    display: inline-block;
+}

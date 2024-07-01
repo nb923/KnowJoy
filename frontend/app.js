@@ -102,6 +102,7 @@ function gameMoveButtonOne(event)
         {
             if (answerButton == 1)
             {
+                timeLeft = 10;
                 changeGameValues();
                 logger.innerHTML = '';
             }
@@ -142,6 +143,7 @@ function gameMoveButtonTwo(event)
         {
             if (answerButton == 2)
             {
+                timeLeft = 10;
                 changeGameValues();
                 logger.innerHTML = '';
             }
@@ -169,8 +171,9 @@ function gameMoveButtonTwo(event)
         logger.innerHTML = 'Error: Not enough pairs for game to start. Have 2+ pairs for game to start';
     }
 }
+let timeLeft = 10;
 function startTimer(){
-    let timeLeft= 10;
+    timeLeft= 10;
     const timerDisplay = document.getElementById('timer');
     console.log(timeLeft);
     timerDisplay.classList.remove('hidden');
@@ -185,10 +188,16 @@ function startTimer(){
             clearInterval(timerId);
             /*can show the answer to user and go to next question*/
         }
-        timeLeft--;
-        document.getElementById('timer').innerHTML = timeLeft + "s";
+        // if right answer, say you got it right! if wrong say 'nope', show right answer, move on to next qn, reset timer
+        else{
+            timeLeft--;
+            document.getElementById('timer').innerHTML = timeLeft + "s";
+        }
+        
     }, 1000);
 }
+
+
 
 document.getElementById('startGameButton').addEventListener('click',startTimer);
 document.getElementById('addDefinition').addEventListener('click', addPair);

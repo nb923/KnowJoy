@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times', sans-serif;
     background-color: #f4e6e6;
     display: flex;
     justify-content: center;
@@ -11,14 +11,31 @@ body {
 .contact-container {
     background-color: #fef7f7;
     border-radius: 10px;
-    padding: 30px;
-    width: 400px;
+    margin: 30px 120px;
+    padding: 20px;
+    width: 800px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-content img {
+    max-width:300px;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.text-content {
+    flex: 1;
 }
 
 .contact-content h1 {
-    font-size: 48px;
+    font-size: 36px;
     color: #8c6161;
 }
 
@@ -34,18 +51,22 @@ form {
 
 input[type="email"], 
 textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 20px;
+    margin-right: 20px;
     border: 1px solid #e0c7c7;
     border-radius: 5px;
     font-size: 14px;
 }
 
 button {
+    display: flex;
+    justify-content: flex-end;
     background-color: #d88f8f;
     color: white;
     border: none;
+    margin-right: 60px;
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;

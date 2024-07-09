@@ -14,7 +14,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     let body = `Email: ${email}\n\nMessage: ${message}`;
 
     // Create the mailto link
-    var mailtoLink = `mailto:someone@yoursite.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    var mailtoLink = `mailto:bknideesh@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     // Redirect to the mailto link after a short delay to show the span message
     setTimeout(function() {

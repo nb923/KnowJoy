@@ -1,15 +1,17 @@
 body {
-    font-family: 'Times', sans-serif;
-    background-color: #f4e6e6;
+    background-color: #272627;
+    color: #333333; 
+    font-family: 'Times New Roman', Cambria, Georgia;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .contact-container {
-    background-color: #fef7f7;
+    background-color: #847f7fdd;
     border-radius: 10px;
     margin: 30px 120px;
     padding: 20px;
@@ -24,57 +26,74 @@ body {
 }
 
 .contact-content img {
-    max-width:300px;
+    max-width: 300px;
     border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #f4e6e6;
 }
 
 .text-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10%;
 }
 
 .contact-content h1 {
     font-size: 36px;
-    color: #8c6161;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .contact-content p {
-    color: #b48c8c;
-    margin: 10px 0 20px;
+    font-size: 16px;
+    color: white;
+    margin: 0 0 20px 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 input[type="email"], 
 textarea {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    margin-right: 20px;
     border: 1px solid #e0c7c7;
     border-radius: 5px;
     font-size: 14px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
 }
 
 button {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #d88f8f;
+    background-color: #272627;
     color: white;
     border: none;
-    margin-right: 60px;
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    align-self: flex-end;
     transition: background-color 0.3s ease;
+    margin-right: 10px;
 }
 
 button:hover {
-    background-color: #bf7a7a;
+    background-color: #4a8a5d; /* Darker Teal */
+}
+
+#sending-message {
+    color: #f4e6e6;
+    font-size: 14px;
+    display: none;
 }

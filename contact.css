@@ -1,7 +1,7 @@
 body {
-    background-color: #272627;
+    background-color: #000000;
     color: #333333; 
-    font-family: 'Times New Roman', Cambria, Georgia;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 }
 
 .contact-container {
-    background-color: #847f7fdd;
+    background-color: #2b2929dd;
     border-radius: 10px;
     margin: 30px 120px;
     padding: 20px;
@@ -30,7 +30,7 @@ body {
     border-radius: 10px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: white;
+    background-color: rgb(94, 36, 229);
 }
 
 .text-content {

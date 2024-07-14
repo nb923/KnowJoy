@@ -55,6 +55,11 @@ html, body {
     font-weight: bold;
     width: auto;
     display: inline-block;
+    cursor: pointer;
+}
+
+#waitlist-button-hero-page:hover {
+    background-color: #613856;
 }
 
 #right-hero-page {

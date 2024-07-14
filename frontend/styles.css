@@ -5,4 +5,54 @@ html, body {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#hero-wrapper {
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    color: white;
+}
 
+#left-hero-page {
+    padding: 2% 2%;
+    width: 50%;
+}
+
+#logo-text-hero-page {
+    font-size: 2.25em;
+    margin: 0%;
+}
+
+#lower-left-hero-page {
+    padding: 25% 10% 25% 10%;
+}
+
+#big-description-hero-page {
+    font-size: 2.75em;
+    margin: 0%;
+    background: linear-gradient(to right, #C874B2 0%, #FFFFFF 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#small-description-hero-page {
+    font-size: 1.35em;
+    margin: 1% 0% 5% 0%;
+}
+
+#waitlist-button-hero-page {
+    padding: 2% 3%;
+    background-color: #C874B2;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-weight: bold;
+    width: auto;
+    display: inline-block;
+}

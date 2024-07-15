@@ -2,8 +2,8 @@ body {
     height: 100px;
     margin: 0px;
     line-height: normal;
-    /* background-color: black; */
-    background: linear-gradient(#343434, #0C0908 );
+    background-color: black;
+    /* background: linear-gradient(#343434, #0C0908 ); */
 }
 
 .flex-container{

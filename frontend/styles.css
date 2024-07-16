@@ -5,6 +5,10 @@ html, body {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container-page {
+    height: 100%;
+}
+
 #hero-wrapper {
     max-width: 100%;
     overflow: auto;

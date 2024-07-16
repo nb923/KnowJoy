@@ -12,15 +12,16 @@ body {
 
 .contact-container {
     background-color: #000000dd;
-    border-radius: 10px;
-    padding: 40px;
+    border-radius: 0.625rem; /* 10px to rem */
+    padding: 2.5rem; /* 40px to rem */
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px to rem */
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1); /* 20px to rem */
+    margin: 2rem; /* Add margin for spacing */
 }
 
 .contact-content {
@@ -34,8 +35,8 @@ body {
 .contact-content img {
     max-width: 40%;
     height: auto;
-    border-radius: 10px;
-    margin: 0 40px;
+    border-radius: 0.625rem; /* 10px to rem */
+    margin: 0 2.5rem; /* 40px to rem */
 }
 
 .text-content {
@@ -43,22 +44,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10%;
+    margin-right: 5%; /* 10% was too much, adjusted to 5% */
 }
 
 .contact-content h1 {
-    font-size: 48px;
+    font-size: 3rem; /* 48px to rem */
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px to rem */
     background: linear-gradient(to right, #C874B2 0%, #FFFFFF 60%);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .contact-content p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px to rem */
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 form {
@@ -71,11 +72,11 @@ form {
 input[type="email"], 
 textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #e0c7c7;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 0.9375rem; /* 15px to rem */
+    margin-bottom: 1.25rem; /* 20px to rem */
+    border: 0.0625rem solid #e0c7c7; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    font-size: 1rem; /* 16px to rem */
     background-color: #ffffff;
     color: #333333;
 }
@@ -89,12 +90,12 @@ button {
     background-color: #C874B2;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 16px;
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+    border-radius: 3.125rem; /* 50px to rem */
+    font-size: 1rem; /* 16px to rem */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 10px;
+    margin-right: 0.625rem; /* 10px to rem */
 }
 
 button:hover {
@@ -103,6 +104,6 @@ button:hover {
 
 #sending-message {
     color: #f4e6e6;
-    font-size: 16px;
+    font-size: 1rem; /* 16px to rem */
     display: none;
 }

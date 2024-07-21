@@ -78,7 +78,7 @@ html, body {
     max-width: 1000px;
 }
 
-/* info page */
+/* INFO PAGE */
 /* body { */
     /* height: 100px;
     margin: 0px;
@@ -101,7 +101,7 @@ html, body {
     justify-content: space-around;
     /* border: 10px solid white; */
     align-content: center;
-    margin-bottom: 500px; /**space btwn info page & next page**/
+    margin-bottom: 300px; /**space btwn info page & next page**/
 }
 
 .optionDescription{
@@ -176,3 +176,138 @@ html, body {
 /* .astronaut_kick:hover {
     opacity: 1; Increase opacity on hover
 }  */
+
+/* CONTACT PAGE */
+/* body {
+    background-color: #000000;
+    color: #333333; 
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.contact-container {
+    background-color: #000000dd;
+    border-radius: 0.625rem; /* 10px to rem */
+    padding: 2.5rem; /* 40px to rem */
+    width: 100%;
+    max-width: 75rem; /* 1200px to rem */
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1); /* 20px to rem */
+    margin: 2rem; /* Add margin for spacing */
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 0.625rem; /* 10px to rem */
+    margin: 0 2.5rem; /* 40px to rem */
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-right: 5%; 10% was too much, adjusted to 5% */
+}
+
+.contact-content h1 {
+    font-size: 3rem; /* 48px to rem */
+    color: white;
+    margin-bottom: 1.25rem; /* 20px to rem */
+    background: linear-gradient(to right, #C874B2 0%, #FFFFFF 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contact-content p {
+    font-size: 1.125rem; /* 18px to rem */
+    color: white;
+    margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 0.9375rem; /* 15px to rem */
+    margin-bottom: 1.25rem; /* 20px to rem */
+    border: 0.0625rem solid #e0c7c7; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    font-size: 1rem; /* 16px to rem */
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #C874B2;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+    border-radius: 3.125rem; /* 50px to rem */
+    font-size: 1rem; /* 16px to rem */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 0.625rem; /* 10px to rem */
+}
+
+button:hover {
+    background-color: #ce4eac; /* Darker Teal */
+}
+
+#sending-message {
+    color: #f4e6e6;
+    font-size: 1rem; /* 16px to rem */
+    display: none;
+}
+
+#image-contact-page {
+    width: 50%;
+}
+
+#form-contact-page {
+    width: 50%;
+}
+
+#contact-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-container {
+    justify-content: center;
+    flex: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}

@@ -190,18 +190,23 @@ html, body {
     height: 100vh;
 } */
 
+#contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
 .contact-container {
     background-color: #000000dd;
     border-radius: 0.625rem; /* 10px to rem */
     padding: 2.5rem; /* 40px to rem */
-    width: 100%;
     max-width: 75rem; /* 1200px to rem */
-    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1); /* 20px to rem */
-    margin: 2rem; /* Add margin for spacing */
 }
 
 .contact-content {
@@ -209,7 +214,6 @@ html, body {
     align-items: center;
     text-align: left;
     width: 100%;
-    height: 100%;
 }
 
 .contact-content img {
@@ -224,7 +228,6 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-right: 5%; 10% was too much, adjusted to 5% */
 }
 
 .contact-content h1 {
@@ -286,28 +289,4 @@ button:hover {
     color: #f4e6e6;
     font-size: 1rem; /* 16px to rem */
     display: none;
-}
-
-#image-contact-page {
-    width: 50%;
-}
-
-#form-contact-page {
-    width: 50%;
-}
-
-#contact-page {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.contact-container {
-    justify-content: center;
-    flex: auto;
-    width: 100%;
-    padding: 0;
-    margin: 0;
 }

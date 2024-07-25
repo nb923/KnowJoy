@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
 }
 
@@ -12,11 +12,15 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    height: 100%;
+    height: 150vh;
     overflow: auto;
     background-color: black;
     color: white;
     margin-bottom: 0%; /**add space between this & info page**/
+}
+
+#page-wrapper {
+    position: relative;
 }
 
 #left-hero-page {
@@ -91,30 +95,39 @@ html, body {
     gap: 200%;
 } */
 
+#info-page {
+    position: relative;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
 .flex-container{
     display: flex;
-    height: 50vh;
+    height: 20vh;
     flex-wrap: wrap;   
     /* flex-direction: row; */
     justify-content: center;
     justify-content: space-evenly;
     justify-content: space-around;
     /* border: 10px solid white; */
-    align-content: center;
+    align-content: flex-start;
     margin-bottom: 300px; /**space btwn info page & next page**/
+    margin-top: 0%;
+    padding-top: 0%;
 }
 
 .optionDescription{
     font-weight: lighter;
+    font-size: 0.75em;
 }
 
 .options{
     width: 250px;
     height: 45px;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     border-radius: 100px;
-    font-family: Tahoma;
+    font-family: "Inter", Tahoma;
     color: white;
     font-weight: bold;
     /* background: #C071B3; */
@@ -228,6 +241,10 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.text-font {
+    font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-content h1 {

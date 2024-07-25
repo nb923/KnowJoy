@@ -207,85 +207,88 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-        const canvas = document.getElementById('canvas-hero-page');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = document.getElementById('right-hero-page').offsetWidth;
-        canvas.height = document.getElementById('hero-wrapper').offsetHeight;
-
-        const startX = canvas.width * 1.05; 
-        const startY = canvas.height * 0.2; 
-        const endY = canvas.height * 0.8; 
-        const radius = canvas.height * 0.7;
-
-        ctx.beginPath();
-        ctx.moveTo(startX, startY); 
-
-        ctx.arc(startX, (startY + endY) / 2, radius, Math.PI / 2, 3 * Math.PI / 2);
-
-        ctx.strokeStyle = '#FFFFFF'; 
-        ctx.lineWidth = 2; 
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(startX, (startY + endY) / 2, radius * 0.4, Math.PI / 2, 3 * Math.PI / 2);
-        ctx.stroke();
-
-        const planetOne = new Image();
-        planetOne.onload = function() {
-            const curveY = startY + radius * 0.2;
-            const planetX = startX - radius + 10;
-
-            ctx.save();
-            ctx.translate(planetX, curveY); 
-            ctx.drawImage(planetOne, -planetOne.width / 2, -planetOne.height / 2);
-            ctx.restore();
-        };
-        planetOne.src = 'assets/planet-one-hero-page.png';
-
-        const planetTwo = new Image();
-        planetTwo.onload = function() {
-            const curveY2 = startY + radius * 0.6;
-            const planetX2 = startX - (radius * 0.4) + 20;
-
-            ctx.save();
-            ctx.translate(planetX2, curveY2); 
-            ctx.drawImage(planetTwo, -planetTwo.width / 2, -planetTwo.height / 2);
-            ctx.restore();
-        };
-        planetTwo.src = 'assets/planet-two-hero-page.png';
-    }
-);
+document.addEventListener('DOMContentLoaded', resizeCanvas);
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+    event.preventDefault();
 
-    // Show the span message
     var sendingMessageSpan = document.getElementById('sending-message');
     sendingMessageSpan.style.display = 'inline';
 
-    // Get form data
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
 
-    // Encode the email and message to be used in a URL
     let subject = "Contact Form Submission";
     let body = `Email: ${email}\n\nMessage: ${message}`;
 
-    // Create the mailto link
     var mailtoLink = `mailto:bknideesh@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Redirect to the mailto link after a short delay to show the span message
     setTimeout(function() {
         window.location.href = mailtoLink;
 
-        // Hide the span message after redirection (assuming email client opens quickly)
         setTimeout(function() {
             sendingMessageSpan.style.display = 'none';
         }, 1000);
     }, 1000);
 });
 
+function scrollToContactPage()
+{
+    var scrollTo = document.getElementById("contact-page");
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
 
+window.addEventListener('resize', resizeCanvas)
 
+function resizeCanvas()
+{
+    const canvas = document.getElementById('canvas-hero-page');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = document.getElementById('right-hero-page').offsetWidth;
+    canvas.height = document.getElementById('hero-wrapper').offsetHeight;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const startX = canvas.width * 1.05; 
+    const startY = canvas.height * 0; 
+    const endY = canvas.height * 0.8; 
+    const radius = canvas.height * 0.4;
+
+    ctx.beginPath();
+    ctx.moveTo(startX, startY); 
+
+    ctx.arc(startX, (startY + endY) / 2, radius, Math.PI / 2, 3 * Math.PI / 2);
+
+    ctx.strokeStyle = '#FFFFFF'; 
+    ctx.lineWidth = 2; 
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(startX, (startY + endY) / 2, radius * 0.4, Math.PI / 2, 3 * Math.PI / 2);
+    ctx.stroke();
+
+    const planetOne = new Image();
+    planetOne.onload = function() {
+        const curveY = startY + radius * 0.5;
+        const planetX = startX - radius + 70;
+
+        ctx.save();
+        ctx.translate(planetX, curveY); 
+        ctx.drawImage(planetOne, -planetOne.width / 2, -planetOne.height / 2);
+        ctx.restore();
+    };
+    planetOne.src = 'assets/planet-one-hero-page.png';
+
+    const planetTwo = new Image();
+    planetTwo.onload = function() {
+        const curveY2 = startY + radius * 1.1;
+        const planetX2 = startX - (radius * 0.4) + 20;
+
+        ctx.save();
+        ctx.translate(planetX2, curveY2); 
+        ctx.drawImage(planetTwo, -planetTwo.width / 2, -planetTwo.height / 2);
+        ctx.restore();
+    };
+    planetTwo.src = 'assets/planet-two-hero-page.png';
+}

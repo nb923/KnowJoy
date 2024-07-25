@@ -6,83 +6,89 @@
     <title>KnowJoy Prototype</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet"  href="./info.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="hero-wrapper">
-        <div id="left-hero-page">
-            <div>
-                <h2 id="logo-text-hero-page">KnowJoy</h2>
+    <div id="page-wrapper">
+        <div id="hero-wrapper">
+            <div id="left-hero-page">
+                <div>
+                    <h2 id="logo-text-hero-page">KnowJoy</h2>
+                </div>
+                <div id="lower-left-hero-page">
+                    <h1 id="big-description-hero-page">Learn the Unknown</h1>
+                    <p id="small-description-hero-page">Anyone can join the universe of members to learn about cutting edge skills through fun games!</p>
+                    <button id="waitlist-button-hero-page" onclick="scrollToContactPage()">Join the Waitlist</button>
+                </div>
             </div>
-            <div id="lower-left-hero-page">
-                <h1 id="big-description-hero-page">Learn the Unknown</h1>
-                <p id="small-description-hero-page">Anyone can join the universe of members to learn about cutting edge skills through fun games!</p>
-                <button id="waitlist-button-hero-page">Join the Waitlist</button>
+            <div id="right-hero-page">
+                <canvas id="canvas-hero-page"></canvas>
             </div>
         </div>
-        <div id="right-hero-page">
-            <canvas id="canvas-hero-page"></canvas>
-        </div>
-    </div>
-
-
-    <!-- Info page -->
-    <div id="info-page">
-        <!-- <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="initial-scale=1.0, width=device-width">
-
-            <link rel="stylesheet"  href="./info.css" />
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" />
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" />
-        </head> -->
-
-        <!-- <body> -->
-            <!-- <figure> -->
+    
+    
+        <!-- Info page -->
+        <div id="info-page">
+            <!-- <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    
+                <link rel="stylesheet"  href="./info.css" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" />
+            </head> -->
+    
+            <!-- <body> -->
+                <!-- <figure> -->
                 <div class="flex-container">
-                <div class="flex-containerUpload">
-                    <div class="options" id="upload">Upload terms
-                        <img class="astronaut_star" alt="" src="assets/astronaut_star.jpg" style="width: 100%;">
-                        <p class="optionDescription">Create your own term-definition deck</p>  
+                    <div class="flex-containerUpload">
+                        <div class="options" id="upload">Upload terms
+                            <img class="astronaut_star" alt="" src="assets/astronaut_star.jpg" style="width: 100%;">
+                            <p class="optionDescription">Create your own term-definition deck</p>  
+                        </div>
+                    </div>
+                    
+                    <div class="flex-containerSelect">
+                        <div class="options" id="select">Select game 
+                            <img class="astronaut_spin" alt="" src="assets/astronaut_spin.jpg" style="width: 100%;">
+                            <p class="optionDescription">Select a game based on your learning style</p>  
+                        </div>
+                    </div>
+                    
+    
+                    <div class="flex-containerCreate">
+                        <div class="options" id="create">Create game 
+                            <img class="astronaut_kick" alt="astronaut kicking" src="assets/astronaut_kick.jpg" style="width: 100%;">
+                            <p class="optionDescription">Feeling a bit creative? You can implement your own game</p>  
+                        </div>
                     </div>
                 </div>
+                <!-- </figure> -->=
                 
-                <div class="flex-containerSelect">
-                    <div class="options" id="select">Select game 
-                        <img class="astronaut_spin" alt="" src="assets/astronaut_spin.jpg" style="width: 100%;">
-                        <p class="optionDescription">Select a game based on your learning style</p>  
-                    </div>
-                </div>
-                
-
-                <div class="flex-containerCreate">
-                    <div class="options" id="create">Create game 
-                        <img class="astronaut_kick" alt="astronaut kicking" src="assets/astronaut_kick.jpg" style="width: 100%;">
-                        <p class="optionDescription">Feeling a bit creative? You can implement your own game</p>  
-                    </div>
-                </div>
-            </div>
-            <!-- </figure> -->=
-            
-        <!-- </body> -->
-    </div>
-  <!--End of info page  -->
-
-    <div id="contact-page">
-        <div class="contact-container">
-            <div class="contact-content">
-                <img id = "image-contact-page" src='assets/astronaut_planet.png' alt="Contact Us">
-                <div id = "form-contact-page">
-                    <div class="text-content">
-                        <h1>Contact Us</h1>
-                        <p>Have any questions or feedback? Reach out to us!</p>
-                        <form id="contact-form">
-                            <input type="email" id="email" placeholder="Your e-mail" required>
-                            <textarea id="message" rows="5" placeholder="Your message" required></textarea>
-                            <div class="form-actions">
-                                <button type="submit">Send Message</button>
-                                <span id="sending-message">Sending Your Message...</span>
-                            </div>
-                        </form>
+            <!-- </body> -->
+        </div>
+      <!--End of info page  -->
+    
+        <div id="contact-page">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <img id = "image-contact-page" src='assets/astronaut_planet.png' alt="Contact Us">
+                    <div id = "form-contact-page">
+                        <div class="text-content">
+                            <h1 class="text-font">Contact Us</h1>
+                            <p class="text-font">Have any questions or feedback? Reach out to us!</p>
+                            <form id="contact-form">
+                                <input type="email" class="text-font" id="email" placeholder="Your e-mail" required>
+                                <textarea id="message" class="text-font" rows="5" placeholder="Your message" required></textarea>
+                                <div class="form-actions">
+                                    <button type="submit" class="text-font">Send Message</button>
+                                    <span id="sending-message" class="text-font">Sending Your Message...</span>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

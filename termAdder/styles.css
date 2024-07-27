@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+#container {
+    display: flex;
+    justify-content: center; /* Center align the boxes horizontally */
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px; /* Space between the two sections */
+}
+
+#termAdder, #termList {
+    width: 100%; /* Allow them to take full width of their flex container */
+    max-width: 600px; /* Set a max width to avoid stretching */
+}
+
+#termAdder {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #8e24aa;
+    box-shadow: 0 0 10px rgba(142, 36, 170, 0.5);
+    background-color: #222;
+}
+
+#termList {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #8e24aa;
+    background-color: #222;
+    max-height: 80vh; /* Limit the height for better layout */
+    overflow-y: auto; /* Scroll if content exceeds max-height */
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #fff;
+    margin: 0; /* Remove default margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add space between form elements */
+}
+
+label {
+    color: #fff;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #8e24aa;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%; /* Full width for inputs */
+}
+
+button {
+    padding: 10px 15px; /* Adjust padding for better button size */
+    border: none;
+    border-radius: 5px;
+    background-color: #6a1b9a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem; /* Font size consistency */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #8e24aa;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#elementList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#elementList li {
+    display: flex;
+    justify-content: space-between; /* Space between term and definition */
+    padding: 10px;
+    border: 1px solid #ab47bc;
+    border-radius: 5px;
+    margin: 5px 0; /* Margin to separate items vertically */
+    background-color: #333; /* Slightly lighter background for better contrast */
+}
+
+.term {
+    font-weight: bold;
+}
+
+.definition {
+    flex: 1; /* Allow definition to take up remaining space */
+    text-align: right; /* Align definition text to the right */
+}

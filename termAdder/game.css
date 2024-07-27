@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gamebox {
+    text-align: center;
+}
+
+#definitioningame {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+#elementDefinition {
+    margin-bottom: 40px; /* Increase space below the definition */
+}
+
+.separatorImage {
+    margin: 20px 0; /* Space around the image */
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size to make it horizontal */
+    transform: rotate(180deg); /* Rotate the image 180 degrees */
+}
+
+#gameControls {
+    display: flex;
+    flex-direction: row; /* Arrange buttons horizontally */
+    align-items: center;
+    width: 100%; /* Ensure buttons take full width for spacing */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 15px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+#logger {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}

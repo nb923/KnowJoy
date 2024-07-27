@@ -238,6 +238,10 @@ function scrollToContactPage()
     scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
 
+function redirectToDemo() {
+    window.location.href = '/termAdder/index1.html';
+}
+
 window.addEventListener('resize', resizeCanvas)
 
 function resizeCanvas()

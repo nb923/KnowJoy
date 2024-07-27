@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowJoy Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="termAdder">
+            <form>
+                <h1>KnowJoy</h1>
+
+                <label for="term">Term:</label>
+                <input name="term" id="term" type="text" required>
+
+                <label for="definition">Definition:</label>
+                <input name="definition" id="definition" type="text" required>
+
+                <div id="buttons">
+                    <button id="addDefinition">Add</button>
+                    <button id="deleteTerm">Delete Term</button>
+                </div>
+
+                <button id="startGameButton">Start Game</button>
+                <h4 id="logger"></h4>
+            </form>
+        </div>
+
+        <div id="termList">
+            <h3>List of Terms</h3>
+            <ul id="elementList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

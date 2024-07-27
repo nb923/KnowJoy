@@ -239,7 +239,7 @@ function scrollToContactPage()
 }
 
 function redirectToDemo() {
-    window.location.href = '/termAdder/index1.html';
+    window.location.href = '../termAdder/index1.html';
 }
 
 window.addEventListener('resize', resizeCanvas)

@@ -105,15 +105,44 @@ html, body {
     display: flex;
     height: 20vh;
     flex-wrap: wrap;   
-    /* flex-direction: row; */
     justify-content: center;
     justify-content: space-evenly;
     justify-content: space-around;
-    /* border: 10px solid white; */
     align-content: flex-start;
-    margin-bottom: 300px; /**space btwn info page & next page**/
+    margin-bottom: 300px; 
     margin-top: 0%;
     padding-top: 0%;
+}
+
+#floating-div {
+    position: fixed;
+    bottom: 1.5vh;
+    right: 1vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#floating-image {
+    width: 50%;
+    height: auto;
+    margin-right: 4vh;
+}
+
+#floating-button {
+    width: 6vh; 
+    height: 6vh;
+    border: none;
+    cursor: pointer;
+    font-size: 3.5vh;
+    z-index: 1000;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
 }
 
 .optionDescription{
@@ -299,7 +328,7 @@ button {
 }
 
 button:hover {
-    background-color: #ce4eac; /* Darker Teal */
+    background-color: #613856; /* Darker Teal */
 }
 
 #sending-message {

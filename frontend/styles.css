@@ -20,8 +20,11 @@ html, body {
 }
 
 #left-hero-page {
-    padding: 2% 2%;
-    width: 50%;
+    padding: 2%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #logo-text-hero-page {
@@ -30,7 +33,7 @@ html, body {
 }
 
 #lower-left-hero-page {
-    padding: 25% 10% 25% 10%;
+    padding: 10% 5%;
 }
 
 #big-description-hero-page {
@@ -93,15 +96,10 @@ html, body {
 
 .flex-container{
     display: flex;
-    height: 50vh;
-    flex-wrap: wrap;   
-    /* flex-direction: row; */
-    justify-content: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     justify-content: space-around;
-    /* border: 10px solid white; */
-    align-content: center;
-    margin-bottom: 300px; /**space btwn info page & next page**/
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .optionDescription{
@@ -109,73 +107,24 @@ html, body {
 }
 
 .options{
-    width: 250px;
-    height: 45px;
-    font-size: 1.5em;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
-    border-radius: 100px;
-    font-family: Tahoma;
-    color: white;
+    border-radius: 20px;
+    font-size: 1.25em;
     font-weight: bold;
-    /* background: #C071B3; */
-    flex: 33.33%;
-    padding: 5px 10px;
-    margin-top: 20px;
-    /* opacity: 0.7; /* Adjust this value to desired opacity */
-    /* transition: opacity 0.5s ease-in; Add a smooth transition effect */
+    color: white;
+    font-family: Tahoma;
 }
 
+.optionDescription {
+    font-weight: lighter;
+}
 
 /* .options:hover {
     opacity: 1; /* Increase opacity on hover */
 /* } */
 
-
-.astronaut_star{
-    display: inline;
-    border-radius: 50px;
-    width: 250px;
-    height: 250px;
-    align-self: center;
-    padding-top: 50px;
-    /* opacity: 0.7; /* Adjust this value to desired opacity */
-    /* transition: opacity 0.5s ease-in; Add a smooth transition effect */
-}
-
-/* .astronaut_star:hover {
-    opacity: 1; Increase opacity on hover
-    } */
-
-.astronaut_spin{
-    display: inline;
-    border-radius: 50px;
-    width: 250px;
-    height: 250px;
-    align-self: center;
-    padding-top: 50px;
-    /* opacity: 0.7; Adjust this value to desired opacity
-    transition: opacity 0.5s ease-in; Add a smooth transition effect */
-}
-
-/* .astronaut_spin:hover {
-    opacity: 1; Increase opacity on hover
-} */
-
-
-.astronaut_kick{
-    display: inline;
-    border-radius: 50px;
-    width: 250px;
-    height: 250px;
-    align-self: center;
-    padding-top: 50px;
-    /* opacity: 0.7; Adjust this value to desired opacity
-    transition: opacity 0.5s ease-in; Add a smooth transition effect */
-}
-
-/* .astronaut_kick:hover {
-    opacity: 1; Increase opacity on hover
-}  */
 
 /* CONTACT PAGE */
 /* body {
@@ -228,11 +177,11 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .contact-content h1 {
     font-size: 3rem; /* 48px to rem */
-    color: white;
     margin-bottom: 1.25rem; /* 20px to rem */
     background: linear-gradient(to right, #C874B2 0%, #FFFFFF 60%);
     -webkit-background-clip: text;
@@ -241,7 +190,6 @@ html, body {
 
 .contact-content p {
     font-size: 1.125rem; /* 18px to rem */
-    color: white;
     margin-bottom: 1.25rem; /* 20px to rem */
 }
 

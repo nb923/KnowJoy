@@ -156,18 +156,22 @@ html, body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1); /* 20px to rem */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* Ensure positioning context for centering */
 }
 
 .contact-content {
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    flex-direction: row;
 }
 
 .contact-content img {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
+    justify-content: space-around;
     border-radius: 0.625rem; /* 10px to rem */
     margin: 0 2.5rem; /* 40px to rem */
 }
@@ -237,4 +241,15 @@ button:hover {
     color: #f4e6e6;
     font-size: 1rem; /* 16px to rem */
     display: none;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+
+    .contact-content img {
+        margin: 0 0 1.25rem 0; /* Remove horizontal margin, add vertical margin */
+        width: 80%; /* Reduce image width on mobile */
+    }
 }
